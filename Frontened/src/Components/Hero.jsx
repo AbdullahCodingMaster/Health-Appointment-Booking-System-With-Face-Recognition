@@ -4,29 +4,41 @@ const Hero = () => {
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex flex-col-reverse lg:flex-row items-center">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-5">
           {/* Text Section - Left */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Welcome to Our Platform
+          <p className='text-secondary font-openSans mb-5 font-bold'>Welcome to PointLab</p>
+            <h1 className="font-rubik text-[50px] font-bold text-gray-900 mb-4">
+            We’ll Ensure You Always Get The Best Result.
             </h1>
             <p className="text-gray-600 mb-8">
-              Discover the best services to grow your business and improve your online presence. We offer exceptional solutions that help you succeed.
+            Lacinia in netus vel a, scelerisque mauris quis et, purus blandit sapien, pharetra, viverra volutpat risus non tortor, cras egestas et maecenas facilisi imperdiet quam fringilla dui mauris enim, nec arcu, interdum sit nisi est facilisi sodales viverra proin et
             </p>
-            <a
-              href="#"
-              className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-dark"
-            >
-              Get Started
-            </a>
+            <div className="flex flex-col sm:flex-row items-start ">
+  {/* Make An Appointment Button */}
+  <div className="bg-primary text-white py-2 px-4 m-2 text-center rounded-lg hover:text-black hover:bg-white transition-colors duration-300 w-full sm:w-auto">
+    <a href="#" className="text-sm font-medium">
+      Make An Appointment
+    </a>
+  </div>
+
+  {/* Learn More Button */}
+  <div className="bg-transparent text-secondary border-[2px] border-secondary py-2 px-4 m-2 text-center rounded-lg hover:bg-secondary hover:text-white transition-colors duration-300 w-full sm:w-auto">
+    <a href="#" className="text-sm font-medium">
+      Learn More
+    </a>
+  </div>
+</div>
+
+
           </div>
 
           {/* Image Section - Right */}
           <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
             <img
-              src="https://via.placeholder.com/500"
+              src="/HeroImage.jpg"
               alt="Hero Image"
-              className="w-full h-auto rounded-lg shadow-md"
+              className="w-full h-[900px] rounded-lg shadow-md"
             />
           </div>
         </div>

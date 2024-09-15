@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
 
           {/* Button on the right, hidden on small screens */}
-          <div className="hidden sm:block flex-shrink-0 text-white py-2 px-6 rounded-lg hover:text-black hover:bg-white bg-primary">
+          <div className="hidden sm:block flex-shrink-0 text-white py-2 px-6 rounded-lg hover:text-black hover:bg-white bg-primary transition-colors duration-300">
             <a href="#" className="px-4 py-2 rounded-md text-sm font-medium">
               Make An Appointment
             </a>
@@ -52,11 +52,11 @@ const Navbar = () => {
       {/* Mobile navigation dropdown (shown only when hamburger menu is clicked) */}
       {isOpen && (
         <div className="sm:hidden space-y-2 mt-2 px-2 pb-3">
-          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium">Home</a>
-          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium">About Us</a>
-          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium">Services</a>
-          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium">Testimonial</a>
-          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
+          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Home</a>
+          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">About Us</a>
+          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Services</a>
+          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Testimonial</a>
+          <a href="#" className="block hover:text-gray-950 px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Contact Us</a>
 
           {/* Button in mobile view */}
           <div className="text-white py-2 px-6 rounded-lg hover:text-black hover:bg-white bg-primary">
